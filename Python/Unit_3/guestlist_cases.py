@@ -1,5 +1,5 @@
 #Building our list
-guest_list=['Otto Rank', 'Earnest Becker', 'Donald Trump']
+guest_list=['Otto Rank', 'Earnest Becker', 'Julius Caeser']
 #Invite each of current guest through iteration
 def send_invites():
     for guest in guest_list:
@@ -9,9 +9,9 @@ print(f"{guest_list[0]}, you are invited to dinner")
 print(f"{guest_list[1]}, you are invited to dinner")
 print(f"{guest_list[-1]}, you are invited to dinner")
 
-#Trump is can't make it and sends JD Vance as his replacement
+#Julius is can't make it and sends Napoleon as his replacement
 print(f"\n{guest_list[-1]}, cannot make it")
-guest_list[-1] = 'JD Vance'
+guest_list[-1] = 'Napoleon'
 
 #print new line
 print()
@@ -27,8 +27,8 @@ print(f"{guest_list}, we have more space")
 
 #insert new guests
 guest_list.insert(0, 'Carl Jung')
-guest_list.insert(2, 'Julius Caeser')
-guest_list.append('Napoleon Bonaparte')
+guest_list.insert(2, 'Plato')
+guest_list.append('Hildegard Von Bingen')
 ##print new line
 print()
 
@@ -45,16 +45,16 @@ send_invites()
 print()
 
 #Not enough Space only two
-print(f"{guest_list} We only have room for 2, all Dicatators or those who are undemocratic will be removed")
+print(f"{guest_list} We only have room for 2, we will have to see some of you back soon.")
 
 #Pop em out of here
 Napoleon_univited = guest_list.pop(5)
-JD_uninvited = guest_list.pop(-1)
-Julius_uninvited = guest_list.pop(2)
+Julius_uninvited = guest_list.pop(-1)
+Plato_uninvited = guest_list.pop(2)
 
-print(f"\n{Napoleon_univited}, you are uninvited due to being a sleeze")
-print(f"\n{JD_uninvited}, you are uninvited due to being a sleeze")
-print(f"\n{Julius_uninvited}, you are uninvited due to being a sleeze")
+print(f"\n{Napoleon_univited}, you are uninvited due to space")
+print(f"\n{Julius_uninvited}, you are uninvited due to space")
+print(f"\n{Plato_uninvited}, you are uninvited due to space")
 
 ##print new line
 print()
